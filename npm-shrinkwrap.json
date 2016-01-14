@@ -1082,7 +1082,11 @@
                               "dependencies": {
                                 "spdx-license-ids": {
                                   "version": "1.1.0",
+<<<<<<< HEAD
                                   "from": "spdx-license-ids@>=1.0.0 <2.0.0",
+=======
+                                  "from": "spdx-license-ids@>=1.0.2 <2.0.0",
+>>>>>>> moodle/master
                                   "resolved": "https://registry.npmjs.org/spdx-license-ids/-/spdx-license-ids-1.1.0.tgz"
                                 }
                               }
@@ -1099,7 +1103,11 @@
                                 },
                                 "spdx-license-ids": {
                                   "version": "1.1.0",
+<<<<<<< HEAD
                                   "from": "spdx-license-ids@>=1.0.0 <2.0.0",
+=======
+                                  "from": "spdx-license-ids@>=1.0.2 <2.0.0",
+>>>>>>> moodle/master
                                   "resolved": "https://registry.npmjs.org/spdx-license-ids/-/spdx-license-ids-1.1.0.tgz"
                                 }
                               }
@@ -1331,7 +1339,11 @@
                       "dependencies": {
                         "align-text": {
                           "version": "0.1.3",
+<<<<<<< HEAD
                           "from": "align-text@>=0.1.0 <0.2.0",
+=======
+                          "from": "align-text@>=0.1.1 <0.2.0",
+>>>>>>> moodle/master
                           "resolved": "https://registry.npmjs.org/align-text/-/align-text-0.1.3.tgz",
                           "dependencies": {
                             "kind-of": {
@@ -1372,7 +1384,11 @@
                       "dependencies": {
                         "align-text": {
                           "version": "0.1.3",
+<<<<<<< HEAD
                           "from": "align-text@>=0.1.0 <0.2.0",
+=======
+                          "from": "align-text@>=0.1.1 <0.2.0",
+>>>>>>> moodle/master
                           "resolved": "https://registry.npmjs.org/align-text/-/align-text-0.1.3.tgz",
                           "dependencies": {
                             "kind-of": {

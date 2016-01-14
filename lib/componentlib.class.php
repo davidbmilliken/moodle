@@ -208,8 +208,16 @@ class component_installer {
 
     /**
      * Old syntax of class constructor. Deprecated in PHP7.
+<<<<<<< HEAD
      */
     public function component_installer($sourcebase, $zippath, $zipfilename, $md5filename='', $destpath='') {
+=======
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function component_installer($sourcebase, $zippath, $zipfilename, $md5filename='', $destpath='') {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($sourcebase, $zippath, $zipfilename, $md5filename, $destpath);
     }
 

@@ -322,8 +322,16 @@ class ouwiki_line {
 
     /**
      * Old syntax of class constructor. Deprecated in PHP7.
+<<<<<<< HEAD
      */
     public function ouwiki_line($data, $linepos) {
+=======
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function ouwiki_line($data, $linepos) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($data, $linepos);
     }
 
@@ -382,8 +390,16 @@ class ouwiki_word {
 
     /**
      * Old syntax of class constructor. Deprecated in PHP7.
+<<<<<<< HEAD
      */
     public function ouwiki_word($word, $start) {
+=======
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function ouwiki_word($word, $start) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($word, $start);
     }
 }
@@ -527,8 +543,16 @@ class ouwiki_changes {
 
     /**
      * Old syntax of class constructor. Deprecated in PHP7.
+<<<<<<< HEAD
      */
     public function ouwiki_changes($diff, $count2) {
+=======
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function ouwiki_changes($diff, $count2) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($diff, $count2);
     }
 

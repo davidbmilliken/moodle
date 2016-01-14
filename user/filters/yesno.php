@@ -42,9 +42,18 @@ class user_filter_yesno extends user_filter_simpleselect {
     }
 
     /**
+<<<<<<< HEAD
      * Old syntax of class constructor for backward compatibility.
      */
     public function user_filter_yesno($name, $label, $advanced, $field) {
+=======
+     * Old syntax of class constructor. Deprecated in PHP7.
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function user_filter_yesno($name, $label, $advanced, $field) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($name, $label, $advanced, $field);
     }
 

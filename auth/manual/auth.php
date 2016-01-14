@@ -54,9 +54,18 @@ class auth_plugin_manual extends auth_plugin_base {
     }
 
     /**
+<<<<<<< HEAD
      * Old syntax of class constructor for backward compatibility.
      */
     public function auth_plugin_manual() {
+=======
+     * Old syntax of class constructor. Deprecated in PHP7.
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function auth_plugin_manual() {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct();
     }
 

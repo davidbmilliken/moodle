@@ -208,9 +208,18 @@ abstract class moodleform {
     }
 
     /**
+<<<<<<< HEAD
      * Old syntax of class constructor for backward compatibility.
      */
     public function moodleform($action=null, $customdata=null, $method='post', $target='', $attributes=null, $editable=true) {
+=======
+     * Old syntax of class constructor. Deprecated in PHP7.
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function moodleform($action=null, $customdata=null, $method='post', $target='', $attributes=null, $editable=true) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($action, $customdata, $method, $target, $attributes, $editable);
     }
 
@@ -1469,9 +1478,18 @@ class MoodleQuickForm extends HTML_QuickForm_DHTMLRulesTableless {
     }
 
     /**
+<<<<<<< HEAD
      * Old syntax of class constructor for backward compatibility.
      */
     public function MoodleQuickForm($formName, $method, $action, $target='', $attributes=null) {
+=======
+     * Old syntax of class constructor. Deprecated in PHP7.
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function MoodleQuickForm($formName, $method, $action, $target='', $attributes=null) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($formName, $method, $action, $target, $attributes);
     }
 
@@ -2629,9 +2647,18 @@ class MoodleQuickForm_Renderer extends HTML_QuickForm_Renderer_Tableless{
     }
 
     /**
+<<<<<<< HEAD
      * Old syntax of class constructor for backward compatibility.
      */
     public function MoodleQuickForm_Renderer() {
+=======
+     * Old syntax of class constructor. Deprecated in PHP7.
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function MoodleQuickForm_Renderer() {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct();
     }
 

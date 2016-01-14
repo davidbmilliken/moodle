@@ -123,9 +123,18 @@ class HTML_QuickForm_Renderer_Tableless extends HTML_QuickForm_Renderer_Default
     } // end constructor
 
     /**
+<<<<<<< HEAD
      * Old syntax of class constructor for backward compatibility.
      */
     public function HTML_QuickForm_Renderer_Tableless() {
+=======
+     * Old syntax of class constructor. Deprecated in PHP7.
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function HTML_QuickForm_Renderer_Tableless() {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct();
     }
 

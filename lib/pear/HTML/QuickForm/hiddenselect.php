@@ -60,9 +60,18 @@ class HTML_QuickForm_hiddenselect extends HTML_QuickForm_select
     } //end constructor
 
     /**
+<<<<<<< HEAD
      * Old syntax of class constructor for backward compatibility.
      */
     public function HTML_QuickForm_hiddenselect($elementName=null, $elementLabel=null, $options=null, $attributes=null) {
+=======
+     * Old syntax of class constructor. Deprecated in PHP7.
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function HTML_QuickForm_hiddenselect($elementName=null, $elementLabel=null, $options=null, $attributes=null) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($elementName, $elementLabel, $options, $attributes);
     }
 

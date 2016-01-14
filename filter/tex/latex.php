@@ -25,8 +25,16 @@
 
         /**
          * Old syntax of class constructor. Deprecated in PHP7.
+<<<<<<< HEAD
          */
         public function latex() {
+=======
+         *
+         * @deprecated since Moodle 3.1
+         */
+        public function latex() {
+            debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
             self::__construct();
         }
 

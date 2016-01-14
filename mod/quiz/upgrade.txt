@@ -1,6 +1,10 @@
 This files describes API changes in the quiz code.
 
+<<<<<<< HEAD
 === 3.0.1 ===
+=======
+=== 3.1 ===
+>>>>>>> moodle/master
 * quiz_attempt::question_print_comment_fields() has been removed. It was broken
   since at least Moodle 2.0.
 

@@ -4943,8 +4943,16 @@ class admin_setting_special_gradelimiting extends admin_setting_configcheckbox {
 
     /**
      * Old syntax of class constructor. Deprecated in PHP7.
+<<<<<<< HEAD
      */
     public function admin_setting_special_gradelimiting() {
+=======
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function admin_setting_special_gradelimiting() {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct();
     }
 

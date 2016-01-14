@@ -302,9 +302,18 @@ class HTML_QuickForm extends HTML_Common {
     } // end constructor
 
     /**
+<<<<<<< HEAD
      * Old syntax of class constructor for backward compatibility.
      */
     public function HTML_QuickForm($formName='', $method='post', $action='', $target='', $attributes=null, $trackSubmit = false) {
+=======
+     * Old syntax of class constructor. Deprecated in PHP7.
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function HTML_QuickForm($formName='', $method='post', $action='', $target='', $attributes=null, $trackSubmit = false) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($formName, $method, $action, $target, $attributes, $trackSubmit);
     }
 
@@ -2001,10 +2010,20 @@ class HTML_QuickForm_Error extends PEAR_Error {
     }
 
     /**
+<<<<<<< HEAD
      * Old syntax of class constructor for backward compatibility.
      */
     public function HTML_QuickForm_Error($code = QUICKFORM_ERROR, $mode = PEAR_ERROR_RETURN,
                          $level = E_USER_NOTICE, $debuginfo = null) {
+=======
+     * Old syntax of class constructor. Deprecated in PHP7.
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function HTML_QuickForm_Error($code = QUICKFORM_ERROR, $mode = PEAR_ERROR_RETURN,
+                         $level = E_USER_NOTICE, $debuginfo = null) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($code, $mode, $level, $debuginfo);
     }
 

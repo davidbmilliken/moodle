@@ -87,9 +87,18 @@ abstract class moodleform_mod extends moodleform {
     }
 
     /**
+<<<<<<< HEAD
      * Old syntax of class constructor for backward compatibility.
      */
     public function moodleform_mod($current, $section, $cm, $course) {
+=======
+     * Old syntax of class constructor. Deprecated in PHP7.
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function moodleform_mod($current, $section, $cm, $course) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($current, $section, $cm, $course);
     }
 

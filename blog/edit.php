@@ -132,8 +132,12 @@ if ($action === 'delete') {
             redirect($returnurl);
         }
     } else if (blog_user_can_edit_entry($entry)) {
-        $optionsyes = array('entryid'=>$id, 'action'=>'delete', 'confirm'=>1, 'sesskey'=>sesskey(), 'courseid'=>$courseid);
-        $optionsno = array('userid'=>$entry->userid, 'courseid'=>$courseid);
+        $optionsyes = array('entryid' => $id,
+                            'action' => 'delete',
+                            'confirm' => 1,
+                            'sesskey' => sesskey(),
+                            'courseid' => $courseid);
+        $optionsno = array('userid' => $entry->userid, 'courseid' => $courseid);
         $PAGE->set_title("$SITE->shortname: $strblogs");
         $PAGE->set_heading($SITE->fullname);
         echo $OUTPUT->header();
@@ -141,7 +145,11 @@ if ($action === 'delete') {
         // Output edit mode title.
         echo $OUTPUT->heading($strblogs . ': ' . get_string('deleteentry', 'blog'), 2);
 
+<<<<<<< HEAD
         echo $OUTPUT->confirm(get_string('blogdeleteconfirm', 'blog'),
+=======
+        echo $OUTPUT->confirm(get_string('blogdeleteconfirm', 'blog', format_string($entry->subject)),
+>>>>>>> moodle/master
                               new moodle_url('edit.php', $optionsyes),
                               new moodle_url('index.php', $optionsno));
 
@@ -182,9 +190,9 @@ if (!empty($entry->id)) {
 }
 
 require_once('edit_form.php');
-$summaryoptions = array('maxfiles'=> 99, 'maxbytes'=>$CFG->maxbytes, 'trusttext'=>true, 'context'=>$sitecontext,
-    'subdirs'=>file_area_contains_subdirs($sitecontext, 'blog', 'post', $entry->id));
-$attachmentoptions = array('subdirs'=>false, 'maxfiles'=> 99, 'maxbytes'=>$CFG->maxbytes);
+$summaryoptions = array('maxfiles' => 99, 'maxbytes' => $CFG->maxbytes, 'trusttext' => true, 'context' => $sitecontext,
+    'subdirs' => file_area_contains_subdirs($sitecontext, 'blog', 'post', $entry->id));
+$attachmentoptions = array('subdirs' => false, 'maxfiles' => 99, 'maxbytes' => $CFG->maxbytes);
 
 $blogeditform = new blog_edit_form(null, compact('entry',
                                                  'summaryoptions',

@@ -196,8 +196,16 @@ class question_category_object {
 
     /**
      * Old syntax of class constructor. Deprecated in PHP7.
+<<<<<<< HEAD
      */
     public function question_category_object($page, $pageurl, $contexts, $currentcat, $defaultcategory, $todelete, $addcontexts) {
+=======
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function question_category_object($page, $pageurl, $contexts, $currentcat, $defaultcategory, $todelete, $addcontexts) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($page, $pageurl, $contexts, $currentcat, $defaultcategory, $todelete, $addcontexts);
     }
 

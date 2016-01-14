@@ -1275,8 +1275,16 @@ class environment_results {
 
     /**
      * Old syntax of class constructor. Deprecated in PHP7.
+<<<<<<< HEAD
      */
     public function environment_results($part) {
+=======
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function environment_results($part) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($part);
     }
 

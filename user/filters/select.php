@@ -60,9 +60,18 @@ class user_filter_select extends user_filter_type {
     }
 
     /**
+<<<<<<< HEAD
      * Old syntax of class constructor for backward compatibility.
      */
     public function user_filter_select($name, $label, $advanced, $field, $options, $default=null) {
+=======
+     * Old syntax of class constructor. Deprecated in PHP7.
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function user_filter_select($name, $label, $advanced, $field, $options, $default=null) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($name, $label, $advanced, $field, $options, $default=null);
     }
 

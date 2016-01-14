@@ -57,9 +57,18 @@ class HTML_QuickForm_static extends HTML_QuickForm_element {
     } //end constructor
 
     /**
+<<<<<<< HEAD
      * Old syntax of class constructor for backward compatibility.
      */
     public function HTML_QuickForm_static($elementName=null, $elementLabel=null, $text=null) {
+=======
+     * Old syntax of class constructor. Deprecated in PHP7.
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function HTML_QuickForm_static($elementName=null, $elementLabel=null, $text=null) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($elementName, $elementLabel, $text);
     }
 

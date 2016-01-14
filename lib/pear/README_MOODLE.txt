@@ -32,7 +32,12 @@ MDL-52081 - made all constructors PHP7 compatible
 
 Pear
 ====
+<<<<<<< HEAD
 Changed constructors in classes PEAR and PEAR_ERROR to be __construct().
+=======
+Changed constructors in classes PEAR and PEAR_ERROR to be __construct(). This has
+been already changed upstream in 1.10.0, remove this line after upgrade.
+>>>>>>> moodle/master
 
 
 Crypt/CHAP

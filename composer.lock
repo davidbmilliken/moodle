@@ -4,8 +4,13 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "hash": "14326394ae10e01040808e94f1dd15b1",
     "content-hash": "cab7cffb6f9057c428c3ad41e61548ac",
+=======
+    "hash": "a957f7332dd1d221be96fb356cb9f03d",
+    "content-hash": "463a75022982e6a64bd9fc0513d9b44c",
+>>>>>>> moodle/master
     "packages": [],
     "packages-dev": [
         {
@@ -663,6 +668,7 @@
         },
         {
             "name": "moodlehq/behat-extension",
+<<<<<<< HEAD
             "version": "v1.30.2",
             "source": {
                 "type": "git",
@@ -673,6 +679,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/moodlehq/moodle-behat-extension/zipball/89c0eb601d75bb60d77cb03b2ad09846265c604e",
                 "reference": "89c0eb601d75bb60d77cb03b2ad09846265c604e",
+=======
+            "version": "v1.31.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moodlehq/moodle-behat-extension.git",
+                "reference": "b4dd6f7d1ca1c89a44b8b010af8546d7a2808b7b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moodlehq/moodle-behat-extension/zipball/b4dd6f7d1ca1c89a44b8b010af8546d7a2808b7b",
+                "reference": "b4dd6f7d1ca1c89a44b8b010af8546d7a2808b7b",
+>>>>>>> moodle/master
                 "shasum": ""
             },
             "require": {
@@ -713,7 +731,11 @@
                 "Behat",
                 "moodle"
             ],
+<<<<<<< HEAD
             "time": "2016-01-05 02:43:00"
+=======
+            "time": "2016-01-05 02:55:24"
+>>>>>>> moodle/master
         },
         {
             "name": "phpdocumentor/reflection-docblock",

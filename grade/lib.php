@@ -1104,8 +1104,16 @@ class grade_plugin_return {
 
     /**
      * Old syntax of class constructor. Deprecated in PHP7.
+<<<<<<< HEAD
      */
     public function grade_plugin_return($params = null) {
+=======
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function grade_plugin_return($params = null) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($params);
     }
 
@@ -2058,8 +2066,16 @@ class grade_seq extends grade_structure {
 
     /**
      * Old syntax of class constructor. Deprecated in PHP7.
+<<<<<<< HEAD
      */
     public function grade_seq($courseid, $category_grade_last=false, $nooutcomes=false) {
+=======
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function grade_seq($courseid, $category_grade_last=false, $nooutcomes=false) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($courseid, $category_grade_last, $nooutcomes);
     }
 
@@ -2245,9 +2261,18 @@ class grade_tree extends grade_structure {
 
     /**
      * Old syntax of class constructor. Deprecated in PHP7.
+<<<<<<< HEAD
      */
     public function grade_tree($courseid, $fillers=true, $category_grade_last=false,
                                $collapsed=null, $nooutcomes=false) {
+=======
+     *
+     * @deprecated since Moodle 3.1
+     */
+    public function grade_tree($courseid, $fillers=true, $category_grade_last=false,
+                               $collapsed=null, $nooutcomes=false) {
+        debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
+>>>>>>> moodle/master
         self::__construct($courseid, $fillers, $category_grade_last, $collapsed, $nooutcomes);
     }
 

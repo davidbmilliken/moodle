@@ -835,7 +835,11 @@ class PEAR_Error
      * @access public
      *
      */
+<<<<<<< HEAD
     public function __construct($message = 'unknown error', $code = null,
+=======
+    function __construct($message = 'unknown error', $code = null,
+>>>>>>> moodle/master
                         $mode = null, $options = null, $userinfo = null)
     {
         if ($mode === null) {
